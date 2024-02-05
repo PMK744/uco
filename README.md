@@ -1,1 +1,1 @@
-# uco
+# My programming assignments well attending the University of Central Oklahoma
