@@ -1,1 +1,1 @@
-# My programming assignments well attending the University of Central Oklahoma
+# My programming assignments while attending the University of Central Oklahoma
