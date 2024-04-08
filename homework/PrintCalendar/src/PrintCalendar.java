@@ -5,7 +5,7 @@ import java.util.Scanner;
 // This program prints a calender for a given month and year.
 // The program prompts the user to enter the year and month, and then prints the calender for the given month and year.
 
-public class PrintCalender {
+public class PrintCalendar {
     /**
      * Scanner object to read input from the user.
     */
@@ -18,24 +18,24 @@ public class PrintCalender {
     public static void main(String[] args) throws Exception {
         // Prompt the user to enter the year, and read the input from the user.
         System.out.print("Enter full year (e.g., 2001): ");
-        int year = PrintCalender.input.nextInt();
+        int year = PrintCalendar.input.nextInt();
 
         // Prompt the user to enter the month, and read the input from the user.
         // We will used a signed int8 instead of a signed int32 to save memory.
         System.out.print("Enter month as a number between 1 and 12: ");
-        byte month = PrintCalender.input.nextByte();
+        byte month = PrintCalendar.input.nextByte();
 
         // Get the month title.
-        String monthTitle = PrintCalender.getMonthTitle(year, month);
+        String monthTitle = PrintCalendar.getMonthTitle(year, month);
 
         // Get the start day of the week for the first day of the month.
-        int startDay = PrintCalender.getStartDay(year, month);
+        int startDay = PrintCalendar.getStartDay(year, month);
 
         // Get the number of days in the month.
-        int numberOfDaysInMonth = PrintCalender.getNumberOfDaysInMonth(year, month);
+        int numberOfDaysInMonth = PrintCalendar.getNumberOfDaysInMonth(year, month);
 
         // Print the calendar.
-        PrintCalender.printMonth(year, month, monthTitle, startDay, numberOfDaysInMonth);
+        PrintCalendar.printMonth(year, month, monthTitle, startDay, numberOfDaysInMonth);
     }
 
     /**
